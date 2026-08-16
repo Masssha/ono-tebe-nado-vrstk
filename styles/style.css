@@ -1,1 +1,343 @@
-/* место для вашего кода */
+body {
+
+}
+
+
+p {
+    font-size: 20px;
+    font-weight: regular;
+    line-height: 24px;
+    margin-bottom: 24px;
+
+}
+
+
+h1 {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 115%;
+    letter-spacing: 30%;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: auto;
+    text-transform: uppercase;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+  list-style: none;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 293px;
+
+}
+
+
+.menu {
+    /* display: flex;
+    flex-direction: row; */
+
+}
+
+
+.menu__list {
+    font-size: 18px;
+    font-weight: regular;
+    line-height: auto;
+
+}
+
+
+.header .menu__list {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.menu__list-item {
+/* иногда кажется, что я создаю излишние классы, но вроде как они нужны... */
+}
+
+
+.menu__list-link {
+
+}
+
+
+.header .menu__list-link.link_underlined::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    box-sizing: border-box;
+    border: 0.5px solid #000;
+    border-radius: 50%;
+    margin: 0 13px;
+    vertical-align: middle;
+}
+
+
+.link_underlined {
+    text-decoration: underline;
+
+}
+
+
+.header__logo-image {
+    width: 148px;
+    height: 105px;
+
+}
+
+
+.address {
+    width: 240px;
+    font-size: 18px;
+    font-weight: regular;
+    line-height: 24.3px;
+
+}
+
+
+.address span {
+  display: block;
+}
+
+
+main {
+
+}
+
+
+.cover {
+    padding: 165px 50px 50px;
+    height: 757px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 180px;
+  
+
+}
+
+
+.main__title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 106px;
+
+}
+
+
+.hero-title__row {
+  display: flex;
+  width: 100%;
+}
+
+
+.hero-title__row-left {
+  justify-content: flex-start;
+}
+
+
+.hero-title__row-center {
+  justify-content: center;
+}
+
+
+.hero-title__row-right {
+  justify-content: flex-end;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.description p {
+    font-size: 20px;
+    font-weight: regular;
+    line-height: 28px;
+    word-spacing: 110%;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+
+}
+
+
+.button {
+    font-size: 22px;
+    font-weight: medium;
+    line-height: auto;
+    text-transform: uppercase;
+    height: 51px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 12px 32px 11px 31px;
+
+}
+
+
+.lots {
+    margin-bottom: 120px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+}
+
+
+.lots-title {
+    margin-left: 40px; 
+    margin-bottom: 27px;
+}
+
+
+.lots__list {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 334px;
+    height: 596px;
+    padding: 48px 40px;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
+    /* url("../images/card-lot-01.jpg"); сначала я хотела вставить фон через css, но потом подумала, что здесь неудобно будет вставлять каждый раз новую картинку и создавать новое правило для каждой карточки*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.article_title {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
+}
+
+
+.article_text {
+    font-size: 20px;
+    font-weight: regular;
+    line-height: 120%;
+    color: white;
+}
+
+
+.more {
+    font-size: 20px;
+    font-weight: regular;
+    line-height: auto;
+    text-decoration: underline;
+    margin-left: 40px;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 180px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+}
+
+
+.about__picture {
+    display: flex;
+    background-color: black;
+    width: 240px;
+    height: 240px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 120px;
+    margin-right: 72px;
+    margin-left: 47px;
+    margin-top: 35px;
+
+}
+
+
+.about__block {
+        margin-top: 133px;
+
+}
+
+
+.about__block-title {
+    margin-bottom: 100px;
+
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    align-items: start;
+    height: 180px;
+
+}
+
+
+.footer .menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.social__networks {
+    display: flex;
+    column-gap: 48px;
+
+}
+
+
+.social__networks-item-image {
+    width: 48px;
+}
